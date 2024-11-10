@@ -4,7 +4,7 @@ import network
 import socket
 import ure
 import time
-import os
+import os 
 
 ap_ssid = "KPHH-AP"
 ap_password = "12345678"

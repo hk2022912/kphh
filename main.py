@@ -2,7 +2,7 @@
 import wifimgr
 import socket
 import machine
-import gc
+import gc 
 
 # Connect to WiFi
 wlan = wifimgr.get_connection()
