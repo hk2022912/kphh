@@ -1,0 +1,35 @@
+
+*Adto sag cmd
+python --version
+pip install esptool - install ang pip kung walay result sa pip --version ug naa then pip show esptool.
+pip show esptool
+pip --version
+
+e saksak sa daan ang esp32.
+
+python -m esptool --chip esp32 --port COM3 erase_flash
+
+e hold ang boot button and wait
+
+adto aning website;
+https://micropython.org/download/ESP32_GENERIC/
+naa instructions pud dha.
+
+pangitaa ang firmware -> releases click ang latest firmware bin file;
+v1.23.0 (2024-06-02) .bin / [.app-bin] / [.elf] / [.map] / [Release notes] (latest)
+mag download mana.
+
+then awati ni; *dapat sakto kung *COM3 *makita rana sa device manager then ports something.
+kung nay problem or error ani try ug cd dapat e locate nimo kung asa nimo na download ning latest firmware bin file then again copypaste ni.
+
+python -m esptool --chip esp32 --port COM3 --baud 460800 write_flash -z 0x1000 ESP32_GENERIC-20240602-v1.23.0.bin
+
+last adto sa vs code.
+
+adto sa extension.
+e download ang pymakr.
+
+create project then naa mn dayun ma notify sa taas then enter to confirm dapat naka empty sya.
+
+sa pag connect adto sa devices sa pymakr naay communication something pero pangitaa tong nay *COM3 something dha nay thunder symbol dha click means connect device
+makita na dayun ang py file dha. Adto sa main.py.
